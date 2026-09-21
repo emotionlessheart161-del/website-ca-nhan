@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Website của Kỳ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            align-items: flex-start;
+        }
+
+        .contact-info, .contact-form-section {
+            flex: 1;
+        }
+
+        .contact-info-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-info-item i {
+            color: #0284c7;
+            font-size: 1.2rem;
+            width: 25px;
+            text-align: center;
+        }
+
+        .contact-info-item strong {
+            color: #0f172a;
+        }
+
+        .contact-form-section {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .contact-form {
+            flex: 2;
+        }
+
+        .contact-illustration {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f9ff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            border: 1px dashed #0284c7;
+        }
+
+        .contact-illustration svg {
+            width: 100%;
+            max-width: 140px;
+            height: auto;
+            fill: #0284c7;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #0f172a;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0284c7;
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+        }
+
+        .btn-submit {
+            background-color: #0284c7;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background-color: #0369a1;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .contact-form-section {
+                flex-direction: column-reverse;
+                gap: 30px;
+            }
+
+            .contact-illustration {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WEBSITE CỦA KỲ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="dichvu.html">Dịch vụ</a></li>
+            <li><a href="lienhe.html" class="active">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Liên Hệ Với Mình</h2>
+        <p>Nếu bạn có thắc mắc, góp ý hoặc có ý muốn hợp tác, hãy trao đổi qua các thông tin bên dưới nhé!</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Thông Tin Kênh Liên Lạc</h3>
+                <br>
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <strong>Email:</strong>
+                    <span>emotionlessheart161@gmail.com</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-phone"></i>
+                    <strong>Điện thoại:</strong>
+                    <span>090x xxx xxx</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <strong>Địa chỉ:</strong>
+                    <span>TP. Hồ Chí Minh, Việt Nam</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fab fa-facebook-f"></i>
+                    <strong>Facebook:</strong>
+                    <a href="#" style="color: #0284c7; text-decoration: none;">facebook.com/kylevan</a>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <div class="contact-form">
+                    <h3>Gửi Tin Nhắn Direct</h3>
+                    <br>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Họ và tên:</label>
+                            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email của bạn:</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nội dung tin nhắn:</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Viết nội dung ở đây..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+
+                <div class="contact-illustration">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về Website Của Kỳ.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - Website của Kỳ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .intro-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .avatar-container {
+            flex: 0 0 200px;
+            text-align: center;
+        }
+
+        .intro-avatar {
+            width: 120px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 3px solid #0284c7;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .info-container {
+            flex: 1;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #1e293b;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .info-value {
+            color: #64748b;
+        }
+
+        @media (max-width: 600px) {
+            .intro-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            .avatar-container {
+                flex: 0 0 auto;
+            }
+            .info-label {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>WEBSITE CỦA KỲ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html" class="active">Giới thiệu</a></li>
+            <li><a href="dichvu.html">Dịch vụ</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Về Bản Thân Mình</h2>
+        <div class="intro-container">
+            <div class="avatar-container">
+                <img class="intro-avatar" src=".vscode/Chan Dung Ky.jpg" alt="Ảnh chân dung của Kỳ">
+            </div>
+            <div class="info-container">
+                <h3>Thông Tin Cá Nhân</h3>
+                
+                <div class="info-item">
+                    <span class="info-label">Họ và tên:</span>
+                    <span class="info-value">Tạ Minh Kỳ</span>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Ngày sinh:</span>
+                    <span class="info-value">17/02/2007</span>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Quê quán:</span>
+                    <span class="info-value">Long An</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">Ngành học:</span>
+                    <span class="info-value">Công nghệ thông tin</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">Sở thích:</span>
+                    <span class="info-value">Ngủ</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">Định hướng:</span>
+                    <span class="info-value">Trở thành lập trình viên chuyên nghiệp</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về Website Của Kỳ.</p>
+    </footer>
+
+</body>
+</html>
