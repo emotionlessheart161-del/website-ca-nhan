@@ -60,33 +60,25 @@ main h2 {
     margin-bottom: 15px;
 }
 
-.content-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+main > div {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
 }
 
-.service-card {
+main > div > div {
+    flex: 1 1 250px;
     border: 1px solid #e2e8f0;
     padding: 20px;
     border-radius: 8px;
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.btn-submit {
+main a.btn-submit, main article a {
     display: inline-block;
     background-color: #0284c7;
     color: #ffffff;
@@ -98,8 +90,15 @@ main h2 {
     text-align: center;
 }
 
-.btn-submit:hover {
+main a.btn-submit:hover, main article a:hover {
     background-color: #0369a1;
+}
+
+.content-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
 }
 
 footer {
